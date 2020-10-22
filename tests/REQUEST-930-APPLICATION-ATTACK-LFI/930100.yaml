@@ -14,7 +14,7 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   Host: "localhost"
                   FoobarHeader: "0x5c0x2e.%00/"

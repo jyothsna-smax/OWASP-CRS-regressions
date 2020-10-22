@@ -17,7 +17,7 @@
             Host: "localhost"
             Cache-Control: "no-cache, no-store, must-revalidate"
           method: GET
-          port: 80
+          port: 443
           # variable name boundary attacks
           uri: "/?'msdasql'"
           version: HTTP/1.0
@@ -37,7 +37,7 @@
             # variable name boundary attacks
             Cookie: "'msdasql'"
           method: POST
-          port: 80
+          port: 443
           version: HTTP/1.0
         output:
           log_contains: id "942410"

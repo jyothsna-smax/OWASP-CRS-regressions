@@ -12,7 +12,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -30,7 +30,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests #FN This should Trigger"              
@@ -48,7 +48,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -66,7 +66,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -96,7 +96,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -120,7 +120,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "POST"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              

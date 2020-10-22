@@ -16,7 +16,7 @@
           headers:
             Host: localhost
           method: GET
-          port: 80
+          port: 443
           uri: "/?var=%22in%20\\u0076\\u0061l\\u0075e\\u004F\\u0066%3d"
           version: HTTP/1.0
         output:

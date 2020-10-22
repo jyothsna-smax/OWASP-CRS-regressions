@@ -16,7 +16,7 @@
           headers:
             Host: localhost
           method: GET
-          port: 80
+          port: 443
           uri: "/?var=union%20select%20col%20from" 
           version: HTTP/1.0
         output:

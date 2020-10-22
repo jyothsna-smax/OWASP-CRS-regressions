@@ -13,13 +13,13 @@
             input:
               dest_addr: "127.0.0.1"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
                   Content-Type: "application/x-www-form-urlencoded"
               data: "hi=test"
-              protocol: "http"
+              protocol: "https"
               stop_magic: True
               uri: "/"
             output:
@@ -33,13 +33,13 @@
             input:
               dest_addr: "127.0.0.1"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
                   Content-Type: "application/x-www-form-urlencoded"
               data: "hi=test"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
             output: 
               no_log_contains: id "920180"              
@@ -61,7 +61,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: POST
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
           output:

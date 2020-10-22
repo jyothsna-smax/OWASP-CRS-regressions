@@ -17,7 +17,7 @@
             Host: localhost
             Content-type: "iso-8859-15"
           method: POST
-          port: 80
+          port: 443
           uri: "/"
           data: "var=.*¾.*¼.*"
         output:

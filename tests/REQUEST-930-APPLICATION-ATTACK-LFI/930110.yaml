@@ -14,7 +14,7 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   Host: "localhost"
                   FoobarHeader: "/../../../././..\\ ../../etc/master.passwd"
@@ -30,7 +30,7 @@
             input:
               dest_addr: "localhost"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   Host: "localhost"
                   X-FTW: "This should trip"
@@ -46,7 +46,7 @@
             input:
               dest_addr: "localhost"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   Host: "localhost"
               uri: "/"

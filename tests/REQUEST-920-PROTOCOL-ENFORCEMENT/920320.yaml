@@ -12,7 +12,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   Host: "localhost"
             output: 
@@ -24,7 +24,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests Enterprise"
                   Host: "localhost"

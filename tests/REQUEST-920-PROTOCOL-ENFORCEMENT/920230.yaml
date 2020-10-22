@@ -13,7 +13,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?parm=%25%37%33%25%36%46%25%36%44%25%36%35%25%37%34%25%36%35%25%37%38%25%37%34%25%35%46%25%33%31%25%33%32%25%33%33%25%33%34"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
@@ -33,7 +33,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?parm=%7%6F%6D%65%74%65%78%74%5F%31%32%33%"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"

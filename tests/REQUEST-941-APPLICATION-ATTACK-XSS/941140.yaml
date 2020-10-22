@@ -14,7 +14,7 @@
           input:
             dest_addr: 127.0.0.1
             method: GET
-            port: 80
+            port: 443
             uri: '/foo'
             headers:
               User-Agent: ModSecurity CRS 3 Tests
@@ -31,7 +31,7 @@
           input:
             dest_addr: 127.0.0.1
             method: GET
-            port: 80
+            port: 443
             uri: '/bar'
             headers:
               User-Agent: ModSecurity CRS 3 Tests
@@ -48,7 +48,7 @@
           input:
             dest_addr: 127.0.0.1
             method: GET
-            port: 80
+            port: 443
             uri: '/bar'
             headers:
               User-Agent: ModSecurity CRS 3 Tests

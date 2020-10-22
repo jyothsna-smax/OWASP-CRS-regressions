@@ -16,7 +16,7 @@
           headers:
             Host: localhost
           method: POST
-          port: 80
+          port: 443
           # 23423 as "sdfsdfs" FROM table
           data: "var=1234%20AS%20%22foobar%22%20FROM%20tablevar2=whatever"  
           version: HTTP/1.0

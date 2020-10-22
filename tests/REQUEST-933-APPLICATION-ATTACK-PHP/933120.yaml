@@ -17,7 +17,7 @@
             Host: "localhost"
             Cache-Control: "no-cache, no-store, must-revalidate"
           method: POST
-          port: 80
+          port: 443
           data: "var=session.bug_compat_42%3dtrue"
           version: HTTP/1.0
         output:

@@ -15,7 +15,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /
         output:
           no_log_contains: id "933130"
@@ -29,7 +29,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /?x=$_SERVER['test'];
         output:
           log_contains: id "933130"
@@ -43,7 +43,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /?x=$_SE%20RVER['test'];
         output:
           no_log_contains: id "933130"       
@@ -57,7 +57,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /?x=$_%53ERVER['test'];
         output:
           log_contains: id "933130"
@@ -71,7 +71,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /?%24_COOKIE=value;
         output:
           log_contains: id "933130"             
@@ -85,7 +85,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /?x=$_%53%20ERVER['request_uri'];
         output:
           no_log_contains: id "933130"                    

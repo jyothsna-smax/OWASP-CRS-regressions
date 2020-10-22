@@ -12,7 +12,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
@@ -27,7 +27,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
@@ -41,7 +41,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
@@ -55,7 +55,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests #FP"              
                   Host: "localhost"
@@ -69,7 +69,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests #FP"              
                   Host: "localhost"
@@ -95,7 +95,7 @@
               Range: bytes=0-,5-0,5-1,5-2,5-3,5-4,5-5,5-6,5-7,5-8,5-9,5-10,5-11,5-12,5-13,5-14,5-15
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: GET
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.1
           output:
@@ -113,7 +113,7 @@
               Range: bytes=10-11, 20-21, 30-31, 40-41, 50-51
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.html 
           output:
             no_log_contains: id "920200"            
@@ -130,7 +130,7 @@
               Range: "bytes=10-11, 20-21, 30-31, 40-41, 50-51, 60-61"
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.html     
           output:
             log_contains: id "920200"  
@@ -147,7 +147,7 @@
               Range: "bytes=10-11, 20-21, 30-31, 40-41, 50-51, 60-61"
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.pdf       
           output:
             no_log_contains: id "920200"
@@ -164,7 +164,7 @@
               Range: "bytes=10-11, 20-21, 30-31, 40-41, 50-51, 60-61, 70-71, 80-81, 90-91, 100-101, 110-11, 120-21, 130-31, 140-41, 150-51, 160-61, 170-71, 180-81, 190-91, 200-101, 210-11, 220-21, 230-31, 240-41, 250-51, 260-61, 270-71, 280-81, 290-91, 300-101, 310-311, 320-321, 330-331, 340-341"
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.pdf       
           output:
             no_log_contains: id "920200"              
@@ -181,7 +181,7 @@
               Range: "bytes=10-11, 20-21, 30-31, 40-41, 50-51, 60-61, 70-71, 80-81, 90-91, 100-101, 110-11, 120-21, 130-31, 140-41, 150-51, 160-61, 170-71, 180-81, 190-91, 200-101, 210-11, 220-21, 230-31, 240-41, 250-51, 260-61, 270-71, 280-81, 290-91, 300-101, 310-311, 320-321, 330-331, 340-341, 350-351"
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.pdf       
           output:
             log_contains: id "920200"
@@ -198,7 +198,7 @@
               Range: "bytes=10-11, 20-21, 30-31, 40-41, 50-51, 60-61"
               User-Agent: "ModSecurity CRS 3 Tests"                
             method: GET
-            port: 80
+            port: 443
             uri: /index.pdf       
           output:
             log_contains: id "920200"            

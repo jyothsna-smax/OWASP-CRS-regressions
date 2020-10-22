@@ -12,7 +12,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
                   Host: "localhost"
@@ -25,7 +25,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               method: "OPTIONS"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
@@ -40,7 +40,7 @@
             input:
               dest_addr: "127.0.0.1"
               method: "HEAD"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
                   Host: "localhost"
@@ -54,7 +54,7 @@
             input:
               dest_addr: "127.0.0.1"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
                   Host: "localhost"
@@ -70,7 +70,7 @@
             input:
               dest_addr: "127.0.0.1"
               method: "TEST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"
                   Host: "localhost"
@@ -94,7 +94,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: DELETE
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
           output:
@@ -118,7 +118,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: FOO
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
           output:
@@ -142,7 +142,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: SUBSCRIBE
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
           output:

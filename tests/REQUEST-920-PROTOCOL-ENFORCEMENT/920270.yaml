@@ -12,7 +12,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test%00=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -26,7 +26,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test=test1%00"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -40,7 +40,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test%00=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -54,7 +54,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -68,7 +68,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -83,7 +83,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test%40=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -97,7 +97,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test%FD=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -111,7 +111,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?test%FD=test1"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
@@ -126,7 +126,7 @@
           stage: 
             input:
               dest_addr: "127.0.0.1"
-              port: 80
+              port: 443
               uri: "/?param=foo%00"
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              

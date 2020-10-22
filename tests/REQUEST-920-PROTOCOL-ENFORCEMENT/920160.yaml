@@ -14,12 +14,12 @@
             input:
               dest_addr: "127.0.0.1"
               method: "GET"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
                   Content-Length: "NotDigits"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
             output: 
               status: 400
@@ -32,13 +32,13 @@
             input:
               dest_addr: "127.0.0.1"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
                   Content-Type: "application/x-www-form-urlencoded"
                   Content-Length: "NotDigits"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
             output: 
               status: 400  
@@ -51,13 +51,13 @@
             input:
               dest_addr: "127.0.0.1"
               method: "POST"
-              port: 80
+              port: 443
               headers:
                   User-Agent: "ModSecurity CRS 3 Tests"              
                   Host: "localhost"
                   Content-Type: "application/x-www-form-urlencoded"
                   Content-Length: "123x"
-              protocol: "http"
+              protocol: "https"
               uri: "/"
             output: 
               status: 400                                               
@@ -80,7 +80,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: POST
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
             data: abc
@@ -105,7 +105,7 @@
               Proxy-Connection: keep-alive
               User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv
             method: POST
-            port: 80
+            port: 443
             uri: /
             version: HTTP/1.0
             data: abc

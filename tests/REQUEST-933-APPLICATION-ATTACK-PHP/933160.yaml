@@ -17,7 +17,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=chr%28123%29
         output:
           log_contains: id "933160"
@@ -33,7 +33,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /
         output:
           log_contains: id "933160"
@@ -49,7 +49,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /
         output:
           log_contains: id "933160"
@@ -65,7 +65,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /
         output:
           log_contains: id "933160"
@@ -81,7 +81,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=exec%0A%28%27bar%27%29
         output:
           log_contains: id "933160"
@@ -97,7 +97,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=FILE%0D%0A%28%29
         output:
           log_contains: id "933160"
@@ -113,7 +113,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=file_ExistS%20%28%0A%0A%29
         output:
           log_contains: id "933160"
@@ -129,7 +129,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -145,7 +145,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -161,7 +161,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -177,7 +177,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -193,7 +193,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -209,7 +209,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -225,7 +225,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -241,7 +241,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -257,7 +257,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -273,7 +273,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -289,7 +289,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=fopen%20%20%28blah%29
         output:
           log_contains: id "933160"
@@ -305,7 +305,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /strrev()
         output:
           log_contains: id "933160"
@@ -321,7 +321,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /strREV%28%24x%29
         output:
           log_contains: id "933160"
@@ -337,7 +337,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: ?x=eval%28chr%28112%29.chr%28104%29.chr%28112%29
         output:
           log_contains: id "933160"
@@ -353,7 +353,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /eval(gzinflate(str_rot13(base64_decode("")
         output:
           log_contains: id "933160"
@@ -369,7 +369,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /eval%28base64_decode%28%27JGNoZWNrID...
         output:
           log_contains: id "933160"
@@ -385,7 +385,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /
         output:
           log_contains: id "933160"
@@ -401,7 +401,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /getegid
         output:
           log_contains: id "933160"
@@ -417,7 +417,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /print_r
         output:
           log_contains: id "933160"
@@ -433,7 +433,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /astrrev()
         output:
           log_contains: id "933160"
@@ -449,7 +449,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /strrev
         output:
           log_contains: id "933160"
@@ -465,7 +465,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /strrev(
         output:
           log_contains: id "933160"
@@ -481,7 +481,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=eval
         output:
           no_log_contains: id "933160"
@@ -497,7 +497,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=the%20files%20%28yep%29
         output:
           no_log_contains: id "933160"
@@ -513,7 +513,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=exec%20%28
         output:
           no_log_contains: id "933160"
@@ -529,7 +529,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=executor%28%29
         output:
           no_log_contains: id "933160"
@@ -545,7 +545,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=cheval%28%24foo%29
         output:
           no_log_contains: id "933160"
@@ -561,7 +561,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=audi%6ffile%28%24foo%29
         output:
           no_log_contains: id "933160"
@@ -577,7 +577,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=the%20system%20is%20down%28%29
         output:
           no_log_contains: id "933160"
@@ -593,7 +593,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=ecosystem%28%29
         output:
           no_log_contains: id "933160"
@@ -609,7 +609,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=systems%28%29
         output:
           no_log_contains: id "933160"
@@ -625,7 +625,7 @@
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
           method: POST
-          port: 80
+          port: 443
           uri: /?foo=system%20something%28%29
         output:
           no_log_contains: id "933160"

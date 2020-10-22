@@ -15,7 +15,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /
         output:
           no_log_contains: id "933110"
@@ -29,7 +29,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload1
         output:
           log_contains: id "933110"
@@ -43,7 +43,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload2
         output:
           log_contains: id "933110"
@@ -57,7 +57,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload3
         output:
           log_contains: id "933110"
@@ -71,7 +71,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload4
         output:
           log_contains: id "933110"
@@ -85,7 +85,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -99,7 +99,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -113,7 +113,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -127,7 +127,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -141,7 +141,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -155,7 +155,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /
         output:
           no_log_contains: id "933110"
@@ -169,7 +169,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload5
         output:
           log_contains: id "933110"
@@ -183,7 +183,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload6
         output:
           log_contains: id "933110"
@@ -197,7 +197,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload7
         output:
           log_contains: id "933110"
@@ -211,7 +211,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload8
         output:
           log_contains: id "933110"
@@ -225,7 +225,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -239,7 +239,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -253,7 +253,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /upload
         output:
           log_contains: id "933110"
@@ -267,7 +267,7 @@
           headers:
             Host: localhost
             User-Agent: ModSecurity CRS 3 Tests
-          port: 80
+          port: 443
           uri: /
         output:
           no_log_contains: id "933110"
